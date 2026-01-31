@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -182,7 +182,7 @@
       const TatvaLanding = () => {
         const handleRequestDemo = () => {
           window.location.href =
-            "https://docs.google.com/forms/d/e/1FAIpQLScQnXd5WrJpEO6-awvrmix-H_MoTRUVpTDfqOEt_vwLGfTDrw/viewform";
+            "https://docs.google.com/forms/d/e/1FAIpQLSeRVzgMjatfJYhITU7nZwrhxpJqCeE_j_2JAujrMkdBuc2Btg/viewform";
         };
 
         return (
@@ -214,8 +214,11 @@
                     gutterBottom
                     sx={{ color: "#2F2F2F" }}
                   >
-                    Tatva{" "}
-                    <span style={{ color: "#2C3E50", fontWeight: 300 }}>
+                    <span style={{ color: "#2c2a63", fontWeight: 600 }}>
+                      {" "}
+                      Tatva
+                    </span>
+                    <span style={{ color: "#2C3E50", fontWeight: 400 }}>
                       {" "}
                       Learning
                     </span>
@@ -234,7 +237,7 @@
                     Students
                   </Typography>
                   <Typography
-                    variant="overline"
+                    // variant="overline"
                     sx={{
                       color: "#5A5A5A",
                       letterSpacing: 4,
@@ -250,8 +253,8 @@
                     sx={{
                       color: "#5A5A5A",
                       mb: 2,
-                      fontWeight: 400,
-                      fontSize: 12,
+                      fontWeight: 600,
+                      fontSize: 16,
                       maxWidth: 600,
                       mx: "auto",
                     }}
@@ -263,8 +266,8 @@
                     sx={{
                       color: "#5A5A5A",
                       mb: 2,
-                      fontWeight: 500,
-                      fontSize: 12,
+                      fontWeight: 600,
+                      fontSize: 16,
                       maxWidth: 600,
                       mx: "auto",
                     }}
@@ -277,7 +280,7 @@
                     onClick={handleRequestDemo}
                     sx={{
                       borderRadius: 50,
-                      px: 8,
+                      px: 18,
                       // py: 2,
                       fontSize: "1.2rem",
                       textTransform: "none",
@@ -291,11 +294,11 @@
                         color: "#2F2F2F",
 
                         backgroundColor: "#faefdc",
-                        boxShadow: "0 15px 25px -5px rgba(13, 148, 136, 0.5)",
+                        // boxShadow: "0 15px 25px -5px rgba(13, 148, 136, 0.5)",
                       },
                     }}
                   >
-                    Request Free Demo
+                    Request a Complimentary Demo
                   </Button>
                 </Box>
               </Container>
@@ -320,6 +323,7 @@
                       mb: 3,
                       // borderBottom: 1,
                       color: "#2F2F2F",
+                      fontSize: 24,
                     }}
                   >
                     THE APPROACH
@@ -330,8 +334,8 @@
                       {
                         icon: "auto_graph",
                         title:
-                          "We offer 1-on-1 live online classes designed for students studying in international school systems.",
-                        desc: "Each student receives individual attention, a structured learning plan, and steady academic guidance aligned with their school curriculum and learning pace.",
+                          "We provide personalised 1-on-1 live online classes designed for students studying in international school systems.",
+                        desc: "Each learner receives focused attention, a structured learning plan, and consistent academic guidance aligned with their school curriculum and individual learning pace.",
                         color: "primary",
                       },
                     ].map((item, idx) => (
@@ -378,46 +382,47 @@
                       mb: 3,
                       color: "#2F2F2F",
                       // borderBottom: 1,
+                      fontSize: 24,
                     }}
                   >
-                    Excellence in Every Session
+                    EXELLENCE IN EVERY SESSION
                   </Typography>
                   <Grid container spacing={6}>
                     {[
                       {
                         icon: "groups",
-                        title: "1-on-1 live online instruction",
-                        // desc: "Flexible across all time zones",
+                        title: "1-On-1 Live Online Instruction",
+                        desc: "Individual sessions focused entirely on the student’s needs.",
                         color: "primary",
                       },
                       {
                         icon: "science",
                         title: "Math, Science & Indian languages",
-                        // desc: "Flexible across all time zones",
+                        desc: "Comprehensive academic support across core subjects.",
                         color: "primary",
                       },
                       {
                         icon: "insights",
-                        title: "Grade-wise learning plans tailored",
-                        // desc: "Flexible across all time zones",
+                        title: "Grade-wise learning plans",
+                        desc: "Structured plans tailored to the student’s level and understanding.",
                         color: "primary",
                       },
                       {
                         icon: "verified",
                         title: "Complimentary demo session",
-                        // desc: "Flexible across all time zones",
+                        desc: "Experience our teaching approach before enrolment.",
                         color: "primary",
                       },
                       {
                         icon: "edit_note",
-                        title: "Homework support & revision",
-                        // desc: "Flexible across all time zones",
+                        title: "Homework support & regular revision",
+                        desc: "Reinforcement of schoolwork for clarity and retention.",
                         color: "primary",
                       },
                       {
                         icon: "psychology",
                         title: "Concept-focused sessions",
-                        // desc: "Flexible across all time zones",
+                        desc: "Targeted explanations for challenging topics.",
                         color: "primary",
                       },
                     ].map((item, idx) => (
@@ -444,8 +449,8 @@
                             sx={{
                               bgcolor: `${item.color}.main`,
                               m: 2,
-                              width: 70,
-                              height: 70,
+                              width: 60,
+                              height: 60,
                               boxShadow: 3,
                             }}
                           >
@@ -485,9 +490,10 @@
                       mb: 3,
                       // borderBottom: 1,
                       color: "#2F2F2F",
+                      fontSize: 24,
                     }}
                   >
-                    Mentor
+                    MENTOR
                   </Typography>
 
                   <Grid container spacing={6}>
@@ -495,8 +501,8 @@
                       {
                         icon: "auto_graph",
                         title:
-                          "All tutors go through a screening and onboarding process and are familiar with international school curricula",
-                        desc: "They focus on clarity, consistency, and adapting explanations to the student’s level of understanding.",
+                          "All mentors at Tatva Learning undergo a structured screening and onboarding process and are well-versed with international school curricula.",
+                        desc: "They emphasise clarity, consistency, and adapting explanations to suit each student’s level of understanding.",
                         color: "primary",
                       },
                     ].map((item, idx) => (
@@ -514,6 +520,7 @@
                           </Typography>
                           <Typography
                             variant="body2"
+                            fontSize="25"
                             // color="#5A5A5A"
                           >
                             {item.desc}
@@ -542,9 +549,10 @@
                       mb: 3,
                       // borderBottom: 1,
                       color: "#2F2F2F",
+                      fontSize: 24,
                     }}
                   >
-                    Flexible & Consistent
+                    FLEXIBLE & CONSISTENT
                   </Typography>
 
                   <Grid container spacing={6}>
@@ -552,19 +560,19 @@
                       {
                         icon: "schedule",
                         title: "Global Scheduling",
-                        desc: "Flexible across all time zones",
+                        desc: "Flexible class timings across international time zones.",
                         color: "primary",
                       },
                       {
                         icon: "person",
                         title: "Mentor Continuity",
-                        desc: "Learn with the same teacher every time",
+                        desc: "Students learn with the same mentor to ensure consistency and progress.",
                         color: "primary",
                       },
                       {
                         icon: "auto_graph",
                         title: "Targeted Learning",
-                        desc: "Focus on your specific difficult topics",
+                        desc: "Focused sessions addressing specific areas of difficulty.",
                         color: "primary",
                       },
                     ].map((item, idx) => (
@@ -583,8 +591,8 @@
                               mx: "auto",
                               mb: 3,
 
-                              width: 70,
-                              height: 70,
+                              width: 60,
+                              height: 60,
                               boxShadow: 3,
                             }}
                           >
@@ -595,6 +603,7 @@
                           </Typography>
                           <Typography
                             variant="body2"
+                            // sx={{ fontWeight: 700 }}
                             // color="#5A5A5A"
                           >
                             {item.desc}
@@ -621,37 +630,88 @@
                   borderRadius: 50,
                   px: 6,
                   color: "primary.main",
-                  // backgroundColor: "#faefdc",
                   // color: "#F5F1EA",
-                  // backgroundColor: "2C3E50",
-                  backgroundColor: "#F5F1EA",
+                  // backgroundColor: "2C3E50", //
+                  // backgroundColor: "#2c2a63",
+                  border: "2px solid #2c2a63",
                   py: 1.5,
-                  mb: 6,
+                  mb: 3,
                   borderWidth: 2,
                   "&:hover": {
                     borderWidth: 2,
                     color: "#2F2F2F",
 
-                    backgroundColor: "#faefdc",
+                    // backgroundColor: "#faefdc",
                   },
                 }}
               >
                 Start Your Journey
               </Button>
-              <Typography
-                variant="h4"
+              <Box
                 sx={{
-                  color: "#5A5A5A",
-                  mb: 2,
-                  fontWeight: 600,
-                  fontSize: 20,
-                  // maxWidth: 600,
+                  display: "flex",
+                  justifyContent: "center",
+                  maxWidth: 600,
                   mx: "auto",
                 }}
               >
-                Hiranmai - Founder/educator and Contact: +91 70935 49383, Mail:
-                mslhiranmai.mula@gmail.com
-              </Typography>
+                <Box>
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      color: "#5A5A5A",
+                      mb: 2,
+                      fontWeight: 800,
+                      fontSize: 20,
+                      // maxWidth: 600,
+                      mx: "auto",
+                    }}
+                  >
+                    Hiranmai
+                  </Typography>
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      color: "#5A5A5A",
+                      mb: 2,
+                      fontWeight: 600,
+                      fontSize: 18,
+                      // maxWidth: 600,
+                      mx: "auto",
+                    }}
+                  >
+                    Founder/educator
+                  </Typography>
+
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      color: "#5A5A5A",
+                      fontWeight: 600,
+                      fontSize: 18,
+                      // maxWidth: 600,
+                      mx: "auto",
+                    }}
+                  >
+                    Mail: mslhiranmai.mula@gmail.com
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      color: "#5A5A5A",
+                      mb: 2,
+                      fontWeight: 600,
+                      fontSize: 18,
+                      // maxWidth: 600,
+                      mx: "auto",
+                    }}
+                  >
+                    Contact: +91 70935 49383
+                  </Typography>
+                </Box>
+                <Box></Box>
+              </Box>
+
               {/* Social Media Icons */}
               <Box
                 sx={{
@@ -662,9 +722,9 @@
                 }}
               >
                 <MaterialUI.IconButton
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/tatvalearning/"
                   target="_blank"
-                  sx={{ color: "#2C3E50", "&:hover": { color: "#E4405F" } }}
+                  sx={{ color: "#2C3E50", "&:hover": { color: "#0077B5" } }}
                 >
                   <svg
                     width="24"
