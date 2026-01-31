@@ -289,9 +289,9 @@
                     onClick={handleRequestDemo}
                     sx={{
                       borderRadius: 50,
-                      px: 18,
+                      px: 8,
                       // py: 2,
-                      fontSize: "1.2rem",
+                      fontSize: "12",
                       textTransform: "none",
                       color: "#F5F1EA",
                       backgroundColor: "2C3E50",
@@ -439,7 +439,8 @@
                         <Box
                           sx={{
                             display: "flex",
-                            alignItems: "center",
+                            // alignItems: "center",
+                            justifyContent: "start",
                             // mb: 4,
                             // gap: 3,
                             // p: 2,
@@ -454,27 +455,41 @@
                             },
                           }}
                         >
-                          <Avatar
-                            sx={{
-                              bgcolor: `${item.color}.main`,
-                              m: 2,
-                              width: 60,
-                              height: 60,
-                              boxShadow: 3,
-                            }}
-                          >
-                            <Icon sx={{ fontSize: 35 }}>{item.icon}</Icon>
-                          </Avatar>
-                          <Typography
-                            variant="body1"
-                            sx={{
-                              fontSize: "1.1rem",
-                              fontWeight: 500,
-                            }}
-                            gutterBottom
-                          >
-                            {item.title}
-                          </Typography>
+                          <Box>
+                            <Avatar
+                              sx={{
+                                bgcolor: `${item.color}.main`,
+                                m: 2,
+                                width: 60,
+                                height: 60,
+                                boxShadow: 3,
+                              }}
+                            >
+                              <Icon sx={{ fontSize: 35 }}>{item.icon}</Icon>
+                            </Avatar>
+                          </Box>
+                          <Box>
+                            <Typography
+                              variant="body1"
+                              sx={{
+                                fontSize: "1.1rem",
+                                fontWeight: 500,
+                              }}
+                              gutterBottom
+                            >
+                              {item.title}
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                fontSize: "19",
+                                fontWeight: 300,
+                              }}
+                              gutterBottom
+                            >
+                              {item.desc}
+                            </Typography>
+                          </Box>
                         </Box>
                       </Grid>
                     ))}
