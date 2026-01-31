@@ -396,7 +396,7 @@
                   >
                     EXELLENCE IN EVERY SESSION
                   </Typography>
-                  <Grid container spacing={6}>
+                  <Grid container spacing={4}>
                     {[
                       {
                         icon: "groups",
@@ -459,7 +459,7 @@
                             <Avatar
                               sx={{
                                 bgcolor: `#2c2a63`,
-                                m: 2,
+                                m: 1,
                                 width: 60,
                                 height: 60,
                                 boxShadow: 3,
@@ -471,12 +471,11 @@
                           <Box sx={{ color: "black" }}>
                             <Typography
                               variant="h6"
-                              sx={
-                                {
-                                  // fontSize: "1.1rem",
-                                  // fontWeight: 600,
-                                }
-                              }
+                              sx={{
+                                textAlign: "left",
+                                // fontSize: "1.1rem",
+                                // fontWeight: 600,
+                              }}
                               gutterBottom
                             >
                               {item.title}
@@ -485,6 +484,8 @@
                             <Typography
                               variant="body2"
                               sx={{
+                                textAlign: "left",
+
                                 fontSize: "19",
                                 fontWeight: 400,
                               }}
