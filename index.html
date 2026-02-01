@@ -37,7 +37,7 @@
       @keyframes fadeInUp {
         from {
           opacity: 0;
-          transform: translateY(50px);
+          transform: translateY(20px);
         }
         to {
           opacity: 1;
@@ -48,12 +48,15 @@
       @keyframes float {
         0% {
           transform: translateY(0px);
+          transform: translateX(0px);
         }
         50% {
-          transform: translateY(-25px);
+          transform: translateY(-10px);
+          transform: translateX(-10px);
         }
         100% {
           transform: translateY(0px);
+          transform: translateX(0px);
         }
       }
 
@@ -205,13 +208,14 @@
                 <Box className="floating-icon">
                   <Box
                     component="img"
-                    src="https://rvjjwbcvrinvdgxq.public.blob.vercel-storage.com/Tatvalearning/ca3e02a6-717a-4424-bcd7-97854a30b1ce-removebg-preview.png" // update path
+                    src="https://rvjjwbcvrinvdgxq.public.blob.vercel-storage.com/Tatvalearning/LOGO-T-removebg-preview.png" // update path
+                    // src="https://rvjjwbcvrinvdgxq.public.blob.vercel-storage.com/Tatvalearning/ca3e02a6-717a-4424-bcd7-97854a30b1ce-removebg-preview.png" // update path
                     // src="https://rvjjwbcvrinvdgxq.public.blob.vercel-storage.com/Tatvalearning/ca3e02a6-717a-4424-bcd7-97854a30b1ce.jpg" // update path
                     alt="Insights"
                     sx={{
-                      width: 220,
-                      height: 220,
-                      mb: -6,
+                      width: 150,
+                      height: 150,
+                      mb: 0,
                     }}
                   />
                 </Box>
